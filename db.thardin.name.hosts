@@ -1,0 +1,22 @@
+$ORIGIN .
+$TTL 38400	; 10 hours 40 minutes
+thardin.name		IN SOA	ns.thardin.name. root.thardin.name. (
+				2007010409 ; serial
+				3600       ; refresh (1 hour)
+				600        ; retry (10 minutes)
+				86400      ; expire (1 day)
+				600        ; minimum (10 minutes)
+				)
+			NS	ns.thardin.name.
+			A	107.161.31.82
+			MX	5 mail.thardin.name.
+$ORIGIN thardin.name.
+$TTL 3600	; 1 hour
+home			A	50.111.127.54
+$TTL 38400	; 10 hours 40 minutes
+mail			A	107.161.31.82
+ns			A	107.161.31.82
+$TTL 3600	; 1 hour
+sa			A	66.69.59.156
+$TTL 38400	; 10 hours 40 minutes
+www			A	107.161.31.82

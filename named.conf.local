@@ -1,0 +1,20 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "thardin.name" {
+  type master;
+  file "/var/lib/bind/db.thardin.name.hosts";
+  allow-update { localhost; };
+//  also-notify {
+//    108.60.199.108;
+//  };
+//  allow-transfer {
+//    108.60.199.108;
+//  };
+//  notify yes;
+};

@@ -1,0 +1,13 @@
+service ddns
+{
+        disable         = no
+        type            = UNLISTED
+        socket_type     = stream
+        protocol        = tcp
+        user            = root
+        wait            = no
+        port            = 1157
+        server          = /usr/local/bin/ddns-server
+        log_on_failure  = HOST
+        instances       = 10
+}
